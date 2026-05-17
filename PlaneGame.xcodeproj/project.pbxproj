@@ -1,0 +1,553 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10000000000000000000001 /* PlaneGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000001 /* PlaneGameApp.swift */; };
+		A10000000000000000000002 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000002 /* GameViewController.swift */; };
+		A10000000000000000000003 /* MenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000003 /* MenuScene.swift */; };
+		A10000000000000000000004 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000004 /* GameScene.swift */; };
+		A10000000000000000000005 /* UpgradeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000005 /* UpgradeScene.swift */; };
+		A10000000000000000000006 /* ShopScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000006 /* ShopScene.swift */; };
+		A10000000000000000000007 /* PlaneNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000007 /* PlaneNode.swift */; };
+		A10000000000000000000008 /* SlingshotNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000008 /* SlingshotNode.swift */; };
+		A10000000000000000000009 /* ObstacleNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000009 /* ObstacleNode.swift */; };
+		A1000000000000000000000A /* CoinNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000000A /* CoinNode.swift */; };
+		A1000000000000000000000B /* EnvironmentNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000000B /* EnvironmentNode.swift */; };
+		A1000000000000000000000C /* PhysicsSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000000C /* PhysicsSystem.swift */; };
+		A1000000000000000000000D /* UpgradeSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000000D /* UpgradeSystem.swift */; };
+		A1000000000000000000000E /* CoinSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000000E /* CoinSystem.swift */; };
+		A1000000000000000000000F /* ProgressionSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000000F /* ProgressionSystem.swift */; };
+		A10000000000000000000010 /* PlaneModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000010 /* PlaneModel.swift */; };
+		A10000000000000000000011 /* UpgradeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000011 /* UpgradeModel.swift */; };
+		A10000000000000000000012 /* EnvironmentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000012 /* EnvironmentModel.swift */; };
+		A10000000000000000000013 /* PlayerProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000013 /* PlayerProgress.swift */; };
+		A10000000000000000000014 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000014 /* GameManager.swift */; };
+		A10000000000000000000015 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000015 /* AudioManager.swift */; };
+		A10000000000000000000016 /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000016 /* HapticsManager.swift */; };
+		A10000000000000000000017 /* AdManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000017 /* AdManager.swift */; };
+		A10000000000000000000018 /* IAPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000018 /* IAPManager.swift */; };
+		A10000000000000000000019 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000019 /* Constants.swift */; };
+		A1000000000000000000001A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000001A /* Extensions.swift */; };
+		A1000000000000000000001B /* MathHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000001B /* MathHelpers.swift */; };
+		A1000000000000000000001C /* GameConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000001C /* GameConfig.swift */; };
+		A1000000000000000000001D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000001D /* Assets.xcassets */; };
+		A1000000000000000000001E /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2000000000000000000001E /* SpriteKit.framework */; };
+		A1000000000000000000001F /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2000000000000000000001F /* GameKit.framework */; };
+		A10000000000000000000020 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A20000000000000000000020 /* StoreKit.framework */; };
+		A10000000000000000000021 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A20000000000000000000021 /* AVFoundation.framework */; };
+		A10000000000000000000022 /* CoreHaptics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A20000000000000000000022 /* CoreHaptics.framework */; };
+		A10000000000000000000023 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A20000000000000000000023 /* UIKit.framework */; };
+		A10000000000000000000024 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A20000000000000000000024 /* SwiftUI.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A20000000000000000000001 /* PlaneGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaneGameApp.swift; sourceTree = "<group>"; };
+		A20000000000000000000002 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		A20000000000000000000003 /* MenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuScene.swift; sourceTree = "<group>"; };
+		A20000000000000000000004 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		A20000000000000000000005 /* UpgradeScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpgradeScene.swift; sourceTree = "<group>"; };
+		A20000000000000000000006 /* ShopScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopScene.swift; sourceTree = "<group>"; };
+		A20000000000000000000007 /* PlaneNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaneNode.swift; sourceTree = "<group>"; };
+		A20000000000000000000008 /* SlingshotNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlingshotNode.swift; sourceTree = "<group>"; };
+		A20000000000000000000009 /* ObstacleNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObstacleNode.swift; sourceTree = "<group>"; };
+		A2000000000000000000000A /* CoinNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinNode.swift; sourceTree = "<group>"; };
+		A2000000000000000000000B /* EnvironmentNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentNode.swift; sourceTree = "<group>"; };
+		A2000000000000000000000C /* PhysicsSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicsSystem.swift; sourceTree = "<group>"; };
+		A2000000000000000000000D /* UpgradeSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpgradeSystem.swift; sourceTree = "<group>"; };
+		A2000000000000000000000E /* CoinSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinSystem.swift; sourceTree = "<group>"; };
+		A2000000000000000000000F /* ProgressionSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressionSystem.swift; sourceTree = "<group>"; };
+		A20000000000000000000010 /* PlaneModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaneModel.swift; sourceTree = "<group>"; };
+		A20000000000000000000011 /* UpgradeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpgradeModel.swift; sourceTree = "<group>"; };
+		A20000000000000000000012 /* EnvironmentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentModel.swift; sourceTree = "<group>"; };
+		A20000000000000000000013 /* PlayerProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerProgress.swift; sourceTree = "<group>"; };
+		A20000000000000000000014 /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
+		A20000000000000000000015 /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		A20000000000000000000016 /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
+		A20000000000000000000017 /* AdManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdManager.swift; sourceTree = "<group>"; };
+		A20000000000000000000018 /* IAPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPManager.swift; sourceTree = "<group>"; };
+		A20000000000000000000019 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A2000000000000000000001A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		A2000000000000000000001B /* MathHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathHelpers.swift; sourceTree = "<group>"; };
+		A2000000000000000000001C /* GameConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameConfig.swift; sourceTree = "<group>"; };
+		A2000000000000000000001D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A2000000000000000000001E /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		A2000000000000000000001F /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		A20000000000000000000020 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		A20000000000000000000021 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A20000000000000000000022 /* CoreHaptics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreHaptics.framework; path = System/Library/Frameworks/CoreHaptics.framework; sourceTree = SDKROOT; };
+		A20000000000000000000023 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A20000000000000000000024 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		A20000000000000000000025 /* PlaneGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlaneGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A20000000000000000000026 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A30000000000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1000000000000000000001E /* SpriteKit.framework in Frameworks */,
+				A1000000000000000000001F /* GameKit.framework in Frameworks */,
+				A10000000000000000000020 /* StoreKit.framework in Frameworks */,
+				A10000000000000000000021 /* AVFoundation.framework in Frameworks */,
+				A10000000000000000000022 /* CoreHaptics.framework in Frameworks */,
+				A10000000000000000000023 /* UIKit.framework in Frameworks */,
+				A10000000000000000000024 /* SwiftUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A40000000000000000000001 /* = Begin PBXGroup section */ = {
+			isa = PBXGroup;
+			children = (
+				A40000000000000000000002 /* PlaneGame */,
+				A4000000000000000000000B /* Frameworks */,
+				A4000000000000000000000C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A40000000000000000000002 /* PlaneGame */ = {
+			isa = PBXGroup;
+			children = (
+				A40000000000000000000003 /* App */,
+				A40000000000000000000004 /* Scenes */,
+				A40000000000000000000005 /* Nodes */,
+				A40000000000000000000006 /* Systems */,
+				A40000000000000000000007 /* Models */,
+				A40000000000000000000008 /* Managers */,
+				A40000000000000000000009 /* Utils */,
+				A4000000000000000000000A /* Config */,
+				A4000000000000000000000D /* Resources */,
+				A20000000000000000000026 /* Info.plist */,
+			);
+			path = PlaneGame;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000003 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000001 /* PlaneGameApp.swift */,
+				A20000000000000000000002 /* GameViewController.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000004 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000003 /* MenuScene.swift */,
+				A20000000000000000000004 /* GameScene.swift */,
+				A20000000000000000000005 /* UpgradeScene.swift */,
+				A20000000000000000000006 /* ShopScene.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000005 /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000007 /* PlaneNode.swift */,
+				A20000000000000000000008 /* SlingshotNode.swift */,
+				A20000000000000000000009 /* ObstacleNode.swift */,
+				A2000000000000000000000A /* CoinNode.swift */,
+				A2000000000000000000000B /* EnvironmentNode.swift */,
+			);
+			path = Nodes;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000006 /* Systems */ = {
+			isa = PBXGroup;
+			children = (
+				A2000000000000000000000C /* PhysicsSystem.swift */,
+				A2000000000000000000000D /* UpgradeSystem.swift */,
+				A2000000000000000000000E /* CoinSystem.swift */,
+				A2000000000000000000000F /* ProgressionSystem.swift */,
+			);
+			path = Systems;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000007 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000010 /* PlaneModel.swift */,
+				A20000000000000000000011 /* UpgradeModel.swift */,
+				A20000000000000000000012 /* EnvironmentModel.swift */,
+				A20000000000000000000013 /* PlayerProgress.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000008 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000014 /* GameManager.swift */,
+				A20000000000000000000015 /* AudioManager.swift */,
+				A20000000000000000000016 /* HapticsManager.swift */,
+				A20000000000000000000017 /* AdManager.swift */,
+				A20000000000000000000018 /* IAPManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000009 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000019 /* Constants.swift */,
+				A2000000000000000000001A /* Extensions.swift */,
+				A2000000000000000000001B /* MathHelpers.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A4000000000000000000000A /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				A2000000000000000000001C /* GameConfig.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		A4000000000000000000000B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2000000000000000000001E /* SpriteKit.framework */,
+				A2000000000000000000001F /* GameKit.framework */,
+				A20000000000000000000020 /* StoreKit.framework */,
+				A20000000000000000000021 /* AVFoundation.framework */,
+				A20000000000000000000022 /* CoreHaptics.framework */,
+				A20000000000000000000023 /* UIKit.framework */,
+				A20000000000000000000024 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A4000000000000000000000C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000025 /* PlaneGame.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A4000000000000000000000D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A2000000000000000000001D /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A50000000000000000000001 /* PlaneGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A70000000000000000000003 /* Build configuration list for PBXNativeTarget "PlaneGame" */;
+			buildPhases = (
+				A60000000000000000000001 /* Sources */,
+				A30000000000000000000001 /* Frameworks */,
+				A60000000000000000000002 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlaneGame;
+			productName = PlaneGame;
+			productReference = A20000000000000000000025 /* PlaneGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A50000000000000000000002 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					A50000000000000000000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = A70000000000000000000001 /* Build configuration list for PBXProject "PlaneGame" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A40000000000000000000001 /* = Begin PBXGroup section */;
+			productRefGroup = A4000000000000000000000C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A50000000000000000000001 /* PlaneGame */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A60000000000000000000002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1000000000000000000001D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A60000000000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000000000000000000001 /* PlaneGameApp.swift in Sources */,
+				A10000000000000000000002 /* GameViewController.swift in Sources */,
+				A10000000000000000000003 /* MenuScene.swift in Sources */,
+				A10000000000000000000004 /* GameScene.swift in Sources */,
+				A10000000000000000000005 /* UpgradeScene.swift in Sources */,
+				A10000000000000000000006 /* ShopScene.swift in Sources */,
+				A10000000000000000000007 /* PlaneNode.swift in Sources */,
+				A10000000000000000000008 /* SlingshotNode.swift in Sources */,
+				A10000000000000000000009 /* ObstacleNode.swift in Sources */,
+				A1000000000000000000000A /* CoinNode.swift in Sources */,
+				A1000000000000000000000B /* EnvironmentNode.swift in Sources */,
+				A1000000000000000000000C /* PhysicsSystem.swift in Sources */,
+				A1000000000000000000000D /* UpgradeSystem.swift in Sources */,
+				A1000000000000000000000E /* CoinSystem.swift in Sources */,
+				A1000000000000000000000F /* ProgressionSystem.swift in Sources */,
+				A10000000000000000000010 /* PlaneModel.swift in Sources */,
+				A10000000000000000000011 /* UpgradeModel.swift in Sources */,
+				A10000000000000000000012 /* EnvironmentModel.swift in Sources */,
+				A10000000000000000000013 /* PlayerProgress.swift in Sources */,
+				A10000000000000000000014 /* GameManager.swift in Sources */,
+				A10000000000000000000015 /* AudioManager.swift in Sources */,
+				A10000000000000000000016 /* HapticsManager.swift in Sources */,
+				A10000000000000000000017 /* AdManager.swift in Sources */,
+				A10000000000000000000018 /* IAPManager.swift in Sources */,
+				A10000000000000000000019 /* Constants.swift in Sources */,
+				A1000000000000000000001A /* Extensions.swift in Sources */,
+				A1000000000000000000001B /* MathHelpers.swift in Sources */,
+				A1000000000000000000001C /* GameConfig.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A80000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A80000000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A80000000000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PlaneGame/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PlaneGame;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.planegame.PlaneGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A80000000000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PlaneGame/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PlaneGame;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.planegame.PlaneGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A70000000000000000000001 /* Build configuration list for PBXProject "PlaneGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A80000000000000000000001 /* Debug */,
+				A80000000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A70000000000000000000003 /* Build configuration list for PBXNativeTarget "PlaneGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A80000000000000000000003 /* Debug */,
+				A80000000000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A50000000000000000000002 /* Project object */;
+}
