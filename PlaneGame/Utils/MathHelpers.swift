@@ -111,10 +111,6 @@ func inverseLerp(_ a: CGFloat, _ b: CGFloat, _ value: CGFloat) -> CGFloat {
 // MARK: - Random Helpers
 
 extension CGFloat {
-    static func random(in range: ClosedRange<CGFloat>) -> CGFloat {
-        CGFloat.random(in: range)
-    }
-
     static func randomSign() -> CGFloat {
         Bool.random() ? 1.0 : -1.0
     }
