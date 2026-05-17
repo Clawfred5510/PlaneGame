@@ -239,7 +239,7 @@ final class GameScene: SKScene {
 
         // Check if plane has stopped or gone below ground
         if planeNode.position.y <= GameConfig.World.groundY + 5 &&
-           planeNode.speed < 10 &&
+           planeNode.currentSpeed < 10 &&
            (gameState == .flying || gameState == .launched) {
             endFlight(smoothLanding: false)
         }
@@ -273,7 +273,7 @@ final class GameScene: SKScene {
         altitudeLabel.text = "ALT: \(alt)"
 
         // Speed bar
-        let speedFraction = (planeNode.speed / GameConfig.Plane.maxSpeed).clamped(to: 0...1)
+        let speedFraction = (planeNode.currentSpeed / GameConfig.Plane.maxSpeed).clamped(to: 0...1)
         let barWidth: CGFloat = 96 * speedFraction
         speedBarFill.xScale = max(0.01, speedFraction)
         speedBarFill.position.x = -(96 - barWidth) / 2

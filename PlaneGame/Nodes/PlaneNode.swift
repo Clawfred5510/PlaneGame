@@ -22,7 +22,7 @@ final class PlaneNode: SKNode {
     private(set) var hasBoost = false
     private var boostTimer: TimeInterval = 0
 
-    var speed: CGFloat { velocity.length }
+    var currentSpeed: CGFloat { velocity.length }
     var isFlying: Bool { isLaunched && position.y > GameConfig.World.groundY + 10 }
 
     // MARK: - Init
