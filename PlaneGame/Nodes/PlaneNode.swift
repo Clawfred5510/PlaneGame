@@ -293,7 +293,7 @@ final class PlaneNode: SKNode {
         emitter.particleColorBlendFactor = 1.0
         emitter.particleColorSequence = SKKeyframeSequence(
             keyframeValues: [SKColor.yellow, SKColor.orange, SKColor.gray],
-            times: [0, 0.3, 1.0]
+            times: [0 as NSNumber, 0.3 as NSNumber, 1.0 as NSNumber]
         )
 
         let texture = SKTexture.placeholder(color: .white, size: CGSize(width: 8, height: 8))

@@ -1,4 +1,4 @@
-import Foundation
+import SpriteKit
 
 // MARK: - Notification Names
 

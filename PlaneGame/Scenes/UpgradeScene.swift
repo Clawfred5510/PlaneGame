@@ -402,9 +402,10 @@ final class StatBar: SKNode {
 
     func setValue(_ value: CGFloat) {
         let fillW = max(1, barWidth * value.clamped(to: 0...1))
+        let previousColor = fillNode.fillColor
         fillNode.removeFromParent()
         fillNode = SKShapeNode(rectOf: CGSize(width: fillW, height: barHeight - 2), cornerRadius: 4)
-        fillNode.fillColor = fillNode.fillColor
+        fillNode.fillColor = previousColor
         fillNode.strokeColor = .clear
         fillNode.position.x = -(barWidth - fillW) / 2
         addChild(fillNode)
