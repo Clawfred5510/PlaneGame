@@ -176,7 +176,7 @@ final class ShopScene: SKScene {
     private func findShopItem(at location: CGPoint) -> ShopItemNode? {
         for item in shopItems {
             let itemLocation = convert(location, to: item)
-            if item.containsPoint(itemLocation) {
+            if item.hitTest(itemLocation) {
                 return item
             }
         }
@@ -253,7 +253,7 @@ final class ShopItemNode: SKNode {
         fatalError("init(coder:) not implemented")
     }
 
-    func containsPoint(_ p: CGPoint) -> Bool {
+    func hitTest(_ p: CGPoint) -> Bool {
         let rect = CGRect(x: -itemWidth / 2, y: -itemHeight / 2, width: itemWidth, height: itemHeight)
         return rect.contains(p)
     }
